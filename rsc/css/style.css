@@ -1,12 +1,14 @@
 body {
     font-family: Inria Sans;
-    height: 2275px;
+    height: 1950px;
     background: #FFFFFF;
 }
 head {
     font-family: inria sans;
 }
-
+html, head, body {
+    scroll-behavior: smooth;
+}
 .rectangle-1 {
     height: 58px;
 }

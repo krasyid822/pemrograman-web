@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laundry</title>
+    <title>Freshen Laundry Service</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,15 +13,15 @@
 
 </head>
 <body>
-    <div class="rectangle-1">
+    <div class="rectangle-1" id="home">
         <img src="rsc\png\logo.png" class="logo" alt="Logo" style="position:absolute; left: 10px; top: 10px;">
         <div style="position:absolute; left:20%; top: 25px;">
-            <a href=""><span class="home-rec-1">Home</span></a>
-            <a href=""><span class="service-rec-1">Service</span></a>
-            <a href=""><span class="about-rec-1">About</span></a>
+            <a href="#home"><span class="home-rec-1">Home</span></a>
+            <a href="#service"><span class="service-rec-1">Service</span></a>
+            <a href="#about"><span class="about-rec-1">About</span></a>
         </div>
         <div style="color:white; position: absolute; right: 10px; top:20px;">
-            <button style="border: 2px solid #FFA845E5; background: white;">Contact us</button>_<bc class="line-1-in-1"></bc>_<button style="border: 2px solid #FFA845E5; background: white;">Login</button>
+            <button onclick="window.location.href='#about'" style="border: 2px solid #FFA845E5; background: white;">Contact us</button>_<bc class="line-1-in-1"></bc>_<button onclick="window.location.href='login.php'" style="border: 2px solid #FFA845E5; background: white;">Login</button>
         </div>
     </div>
 
@@ -31,14 +31,14 @@
             Terbaik</h1>
             <p class="txt-tidak-perlu-in-rect-2">Tidak perlu khawatir lagi soal cucian! Biarkan kru profesional kami di Freshen Laundry Service mengerjakan tugas Anda.</p>
             <br>
-            <button class="rec-5-in-2">Contact us</button>
+            <button onclick="window.location.href='#contact'" class="rec-5-in-2">Contact us</button>
         </div>
         <div>
             <iframe width="240" height="135" src="https://www.youtube.com/embed/dTtv5Cx6oXI" title="Desain Interior Laundry Kekinian Tahun ini" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; right: 50px; top: 130px; border: 3px solid white;"></iframe>
         </div>
     </div>
 
-    <div class="rectangle-3">
+    <div class="rectangle-3" id="service">
         <h2 style="text-align: center; font-family: inria sans; padding-top: 10px;">Our Service</h2>
         <div style="display: flex;">
             <div style="margin-left: 1%;">
@@ -65,7 +65,7 @@
         </div>
     </div>
 
-    <div style="display: flex;">
+    <div style="display: flex;" id="about">
         <img src="rsc\jpg\about-us.jpg" height="369" width="457" style="padding-left: 8%; padding-top: 10%; padding-right: 4%; padding-bottom: 10%;">
         <div style="display: block;">
             <p>
@@ -75,7 +75,7 @@
         </div>
     </div>
 
-    <div style="margin-left: 10px; display: flex;">
+    <div style="margin-left: 10px; display: flex;" id="contact">
         <div>
             <h2 style="color: #fbd7a7;">Hubungi Kami</h2>
             <p><b>Punya pertanyaan atau butuh bantuan?<br>Hubungi kami hari ini!</b></p>
@@ -91,13 +91,13 @@
         <img src="rsc\jpg\hubungi-kami.jpg" width="457" height="369" style="border: 10px solid white; right: 0; position: absolute; padding-top: 6%;">
     </div>
 
-    <footer style="height: 69px; border-radius: 5px; padding-top: 5%; background-color: #fbd7a7; margin: 1%;">
-        (c) 2024 Freshen Laundry Service. All Rights Reserved.
-        <div style="right: 0;">
-            <a href=""><img src="rsc\png\logo.png" height="34"></a>
-            <a href="">About</a>
-            <a href="">Services</a>
-            <a href="">Contact us</a>
+    <footer style="height: 6px; border-radius: 5px; padding-top: 5%; background-color: #fbd7a7; margin-top: 1%;">
+        <div style="top: 1930px; position: absolute; left: 20px;">(c) 2024 Freshen Laundry Service. All Rights Reserved.</div>
+        <div style="right: 30px; position: absolute; top: 1930px; color: black; font-family: inria sans;">
+            <a href="#home"><img src="rsc\png\logo.png" height="34" style="padding-right: 5px;"></a>
+            <a href="#about" style="padding-right: 5px;">About</a>
+            <a href="#service" style="padding-right: 5px;">Services</a>
+            <a href="#contact">Contact us</a>
         </div>
     </footer>
 </body>
