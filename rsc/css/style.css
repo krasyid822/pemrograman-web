@@ -1,0 +1,177 @@
+body {
+    font-family: Inria Sans;
+    height: 2275px;
+    background: #FFFFFF;
+}
+head {
+    font-family: inria sans;
+}
+
+.rectangle-1 {
+    height: 58px;
+}
+.rectangle-3 {
+    height: 396px;
+    background-color: #fbd7a7;
+}
+.logo {
+    width: 34px;
+    height: 35px;
+    top: 29px;
+    left: 76px;
+    gap: 0px;
+    opacity: 0px;
+}
+.home-rec-1 {
+    width: 53px;
+    height: 24px;
+    top: 46px;
+    left: 431px;
+    gap: 0px;
+    opacity: 0px;
+
+    font-family: Inria Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.98px;
+    text-align: left;
+
+    color: #000000;
+}
+.service-rec-1 {
+    padding-left: 10px;
+
+    font-family: Inria Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.98px;
+    text-align: left;
+
+    color: #000000;
+}
+.about-rec-1 {
+    padding-left: 10px;
+    font-family: Inria Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.98px;
+    text-align: left;
+
+    color: #000000;
+}
+.rec-3-in-1 {
+    width: 90px;
+    height: 43px;
+    top: 25px;
+    left: 1047px;
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #FFA845E5
+}
+.line-1-in-1 {
+    width: 43.01px;
+    height: 0px;
+    top: 25px;
+    left: 1156px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    angle: -88.67 deg;
+
+    border: 1px solid #000000
+}
+.rec-4-in-1 {
+    width: 72px;
+    height: 43px;
+    top: 25px;
+    left: 1177px;
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #FFA845E5
+}
+.contact-rec-1 {
+    width: 61px;
+    height: 16px;
+    top: 40px;
+    left: 1064px;
+    gap: 0px;
+    opacity: 0px;
+
+    font-family: Inria Sans;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15.59px;
+    text-align: left;
+
+    color: #000000;
+}
+.login-rec-1 {
+    width: 35px;
+    height: 17px;
+    top: 40px;
+    left: 1197px;
+    gap: 0px;
+    opacity: 0px;
+
+    font-family: Inria Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.79px;
+    text-align: left;
+
+    color: #000000;
+}
+
+.rectangle-2 {
+    background: #AC70506E;
+    background-image: url('..\\..\\rsc\\gif\\laundry.gif');
+}
+.txt-rasakan-in-rect-2 {
+    width: 228px;
+    height: 60px;
+    top: 239px;
+    left: 119px;
+    gap: 0px;
+    opacity: 0px;
+
+    font-family: Inria Sans;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 29.98px;
+    text-align: left;
+
+    color: #ffffff;
+}
+.txt-tidak-perlu-in-rect-2 {
+    width: 458px;
+    height: 26px;
+    top: 309px;
+    left: 119px;
+    gap: 0px;
+    opacity: 0px;
+
+    font-family: Inria Sans;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 17.99px;
+    text-align: left;
+
+    color: #ffffff;
+}
+.rec-5-in-2 {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    background: #F17B14;
+    border: 1px solid white
+}
