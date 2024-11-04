@@ -76,7 +76,16 @@
     </div>
 
     <div style="margin-left: 10px;">
-        <h2>Hubungi Kami</h2>
+        <h2 style="color: #fbd7a7;">Hubungi Kami</h2>
+        <p><b>Punya pertanyaan atau butuh bantuan?<br>Hubungi kami hari ini!</b></p>
+        <form action="proses.php" method="post">
+            <input type="text" name="nama" placeholder="Nama" style="width: 200px; height: 30px; margin-top: 10px;"><br>
+            <input type="tel" name="telepon" placeholder="Nomor handphone" style="width: 200px; height: 30px; margin-top: 10px;"><br>
+            <input type="email" name="email" placeholder="Email" style="width: 200px; height: 30px; margin-top: 10px;"><br>
+            <input type="text" name="subjek" placeholder="Subjek" style="width: 200px; height: 30px; margin-top: 10px;"><br>
+            <textarea name="pesan" placeholder="Pesan" style="width: 200px; height: 100px; margin-top: 10px;"></textarea><br>
+            <button type="submit" name="submit" style="width: 200px; height: 30px; margin-top: 10px; background: #fbd7a7; color: #FFA845E5;">Kirim</button>
+        </form>
     </div>
 </body>
 </html>
