@@ -137,6 +137,8 @@ html, head, body {
 .rectangle-2 {
     background: #AC70506E;
     background-image: url('..\\..\\rsc\\gif\\laundry.gif');
+    background-repeat: no-repeat;
+    background-size: 1600px 300px;
 }
 .txt-rasakan-in-rect-2 {
     width: 228px;
