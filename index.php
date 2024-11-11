@@ -13,6 +13,8 @@
 
 </head>
 <body>
+    <!-- test
+-->
     <div class="rectangle-1" id="home">
         <img src="rsc\png\logo.png" class="logo" alt="Logo" style="position:absolute; left: 10px; top: 10px;">
         <div style="position:absolute; left:20%; top: 25px;">
