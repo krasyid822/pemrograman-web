@@ -14,6 +14,7 @@
 </head>
 <body>
     <!-- test
+     test rasyid
 -->
     <div class="rectangle-1" id="home">
         <img src="rsc\png\logo.png" class="logo" alt="Logo" style="position:absolute; left: 10px; top: 10px;">
