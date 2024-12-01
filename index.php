@@ -82,7 +82,7 @@
         <div>
             <h2 style="color: #fbd7a7;">Hubungi Kami</h2>
             <p><b>Punya pertanyaan atau butuh bantuan?<br>Hubungi kami hari ini!</b></p>
-            <form action="proses.php" method="post">
+            <form action="proses_feedback.php" method="post" name="input">
                 <input type="text" name="nama" placeholder="Nama" style="width: 200px; height: 30px; margin-top: 10px;"><br>
                 <input type="tel" name="telepon" placeholder="Nomor handphone" style="width: 200px; height: 30px; margin-top: 10px;"><br>
                 <input type="email" name="email" placeholder="Email" style="width: 200px; height: 30px; margin-top: 10px;"><br>
