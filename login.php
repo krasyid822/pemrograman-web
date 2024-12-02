@@ -2,7 +2,7 @@
 session_start();
 include 'koneksi.php';
 $username = $_POST['username'];
-$password = md5($_POST['password']);
+$password = $_POST['password'];
 
 // Mengubah nama tabel dari 'admin' menjadi 'tb_admin'
 $data = mysqli_query($koneksi, "select * from tb_admin where username='$username' and password='$password'");
@@ -13,5 +13,5 @@ if ($cek > 0) {
     $_SESSION['status'] = "login";
     header("location:admin/index.php");
 } else {
-    header("location:index.php?pesan=gagal");
+    header("location:index_login.php?pesan=gagal");
 }

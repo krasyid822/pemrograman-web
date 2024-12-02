@@ -46,7 +46,7 @@ include '../koneksi.php';
                                     ?>
                                 </span>
                             </h1>
-                            Jumlah Cucian Di Proses
+                            Jumlah Cucian Diterima
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@ include '../koneksi.php';
                                     ?>
                                 </span>
                             </h1>
-                            Jumlah Cucian Siap Ambil
+                            Jumlah Cucian Diproses
                         </div>
                     </div>
                 </div>

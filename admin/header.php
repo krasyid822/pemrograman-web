@@ -33,6 +33,7 @@
                     <li><a href="pelanggan.php" style="background-color:#FFFFFF ; color:black"><i class="glyphicon glyphicon-user "></i> Pelanggan</a></li>
                     <li><a href="transaksi.php" style="background-color:#FFFFFF ; color:black"><i class="glyphicon glyphicon-random"></i> Transaksi</a></li>
                     <li><a href="laporan.php" style="background-color:#FFFFFF ; color:black"><i class="glyphicon glyphicon-list-alt"></i> Laporan</a></li>
+                    <li><a href="feedback.php" style="background-color:#FFFFFF ; color:black"><i class="glyphicon glyphicon-envelope"></i> Feedback</a></li>
 
                     <li class="dropdown"> <a href="#" style="background-color:#FFFFFF ; color:black" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                             <i class="glyphicon glyphicon-wrench"></i> Pengaturan <span class="caret"></span></a>

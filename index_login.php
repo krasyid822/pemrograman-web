@@ -54,9 +54,9 @@
             <center>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="home.php" style="background-color:#FFFFFF; color:black"><i class="glyphicon glyphicon-home"></i> Home</a></li>
-                        <li><a href="service.php" style="background-color:#FFFFFF; color:black"><i class="glyphicon glyphicon-user"></i> Service</a></li>
-                        <li><a href="about.php" style="background-color:#FFFFFF; color:black"><i class="glyphicon glyphicon-random"></i> About</a></li>
+                        <li class="active"><a href="./index.php#home" style="background-color:#FFFFFF; color:black"><i class="glyphicon glyphicon-home"></i> Home</a></li>
+                        <li><a href="./index.php#service" style="background-color:#FFFFFF; color:black"><i class="glyphicon glyphicon-user"></i> Service</a></li>
+                        <li><a href="./index.php#about" style="background-color:#FFFFFF; color:black"><i class="glyphicon glyphicon-random"></i> About</a></li>
                     </ul>
                 </div>
             </center>
