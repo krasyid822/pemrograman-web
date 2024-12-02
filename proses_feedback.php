@@ -15,6 +15,9 @@ values(
        '$subjek',
        '$pesan')");
 
+//echo '<script> alert("Pesan Berhasil Dikirim") </script>';
+header("location:index.php"); 
 
-echo '<script> alert("Pesan Berhasil Dikirim") </script>';
+
+
 ?>
