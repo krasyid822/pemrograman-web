@@ -24,7 +24,7 @@
             <a href="#about"><span class="about-rec-1">About</span></a>
         </div>
         <div style="color:white; position: absolute; right: 10px; top:20px;">
-            <button onclick="window.location.href='#contact'" style="border: 2px solid #FFA845E5; background: white;">Contact us</button>_<bc class="line-1-in-1"></bc>_<button onclick="window.location.href='login.php'" style="border: 2px solid #FFA845E5; background: white;">Login</button>
+            <button onclick="window.location.href='#contact'" style="border: 2px solid #FFA845E5; background: white;">Contact us</button>_<bc class="line-1-in-1"></bc>_<button onclick="window.location.href='index_login.php'" style="border: 2px solid #FFA845E5; background: white;">Login</button>
         </div>
     </div>
 
