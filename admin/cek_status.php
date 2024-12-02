@@ -3,19 +3,15 @@
 
 <head>
     <title>SISTEM INFORMASI FAMILY LAUNDRY</title>
+
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
     <script type="text/javascript" src="../assets/js/jquery.js"></script>
     <script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+
 </head>
 
 <body>
-    <!-- cek apakah sudah login -->
-    <?php
-    session_start();
-    if ($_SESSION['status'] != "login") {
-        header("location:../index.php?pesan=belum_login");
-    }
-    ?>
+    
 
     <?php
     include '../koneksi.php';
@@ -31,9 +27,16 @@
                 <center>
                     <h2>FAMILY LAUNDRY</h2>
                 </center>
-                <h3>INVOICE-<?php echo $t['transaksi_id']; ?></h3>
+                <h3></h3>
+                <a href="../index.php" class="btn btn-primary pull-right">KEMBALI</a>
+                <br />
                 <br />
                 <table class="table">
+                    <tr>
+                        <th width="20%">No. Invoice</th>
+                        <th>:</th>
+                        <td>INVOICE-<?php echo $t['transaksi_id']; ?></td>
+                    </tr>
                     <tr>
                         <th width="20%">Tgl. Laundry</th>
                         <th>:</th>
@@ -86,7 +89,7 @@
                     </tr>
                 </table>
                 <br />
-                <h4>Daftar Cucian</h4>
+                <h4 class="text-center">Daftar Cucian</h4>
                 <table class="table table-bordered table-striped">
                     <tr>
                         <th>Jenis Pakaian</th>
@@ -95,6 +98,7 @@
                     <?php
                     $id = $t['transaksi_id'];
                     $pakaian = mysqli_query($koneksi, "select * from tb_pakaian where pakaian_transaksi='$id'");
+
                     while ($p = mysqli_fetch_array($pakaian)) {
                     ?>
                         <tr>
@@ -103,19 +107,16 @@
                         </tr>
                     <?php } ?>
                 </table>
+
                 <br />
                 <p>
                     <center><i>" SALAM BERSIH, SALAM WANGI ".</i></center>
                 </p>
-
             <?php
             }
             ?>
         </div>
     </div>
-    <script type="text/javascript">
-        window.print();
-    </script>
 </body>
 
 </html>

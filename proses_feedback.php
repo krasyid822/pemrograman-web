@@ -6,8 +6,8 @@ $email = $_POST['email'];
 $subjek = $_POST['subjek'];
 $pesan = $_POST['pesan'];
 
-include "koneksi_home.php";
-mysqli_query($conn, "insert into tb_feedback(nama, no_hp, email, subjek, pesan)
+include "koneksi.php";
+mysqli_query($koneksi, "insert into tb_feedback(nama, no_hp, email, subjek, pesan)
 values(
        '$nama',
        '$noHp',

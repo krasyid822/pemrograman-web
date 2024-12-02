@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freshen Laundry Service</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +14,7 @@
 
 </head>
 <body>
-    <!-- test
-     test rasyid pati
--->
+    
     <div class="rectangle-1" id="home">
         <img src="rsc\png\logo.png" class="logo" alt="Logo" style="position:absolute; left: 10px; top: 10px;">
         <div style="position:absolute; left:20%; top: 25px;">
@@ -35,6 +34,7 @@
             <p class="txt-tidak-perlu-in-rect-2">Tidak perlu khawatir lagi soal cucian! Biarkan kru profesional kami di Freshen Laundry Service mengerjakan tugas Anda.</p>
             <br>
             <button onclick="window.location.href='#contact'" class="rec-5-in-2">Contact us</button>
+            <button onclick="window.location.href='#status'" class="rec-5-in-2">Cek Status</button>
         </div>
         <div>
             <iframe width="240" height="135" src="https://www.youtube.com/embed/dTtv5Cx6oXI" title="Desain Interior Laundry Kekinian Tahun ini" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; right: 50px; top: 130px; border: 3px solid white;"></iframe>
@@ -78,8 +78,8 @@
         </div>
     </div>
 
-    <div style="margin-left: 10px; display: flex;" id="contact">
-        <div>
+    <div style="margin-left: 10px; display: flex;">
+        <div id="contact">
             <h2 style="color: #fbd7a7;">Hubungi Kami</h2>
             <p><b>Punya pertanyaan atau butuh bantuan?<br>Hubungi kami hari ini!</b></p>
             <form action="proses_feedback.php" method="post" name="input">
@@ -90,6 +90,43 @@
                 <textarea name="pesan" placeholder="Pesan" style="width: 200px; height: 100px; margin-top: 10px;"></textarea><br>
                 <button type="submit" name="submit" style="width: 200px; height: 30px; margin-top: 10px; background: #fbd7a7; color: #FFA845E5;">Kirim</button>
             </form>
+        </div>
+        <div id="status">
+            <h2 style="color: #fbd7a7;">Cek Status</h2>
+            <p><b>Ingin melihat status pengerjaan?<br>Masukkan ID yang tertera di Invoice!</b></p>
+            <form id="idForm">
+    <input type="text" id="id" name="invoice" placeholder="ID Invoice" required style="width: 200px; height: 30px; margin-top: 10px;"><br>
+    <button type="submit" name="submit" style="width: 200px; height: 30px; margin-top: 10px; background: #fbd7a7; color: #FFA845E5;">Cari</button>
+</form>
+<div id="message" style="margin-top: 20px; color: red;"></div>
+
+<script>
+    $(document).ready(function () {
+        $('#idForm').on('submit', function (e) {
+            e.preventDefault(); 
+
+            const id = $('#id').val();
+
+            $.ajax({
+                url: 'proses_cek_status.php', 
+                method: 'POST',
+                data: { invoice: id }, 
+                success: function (response) {
+                    if (response.trim() === 'success') {
+                        window.location.href = 'admin/cek_status.php?id=' + id;
+                    } else if (response.trim() === 'fail') {
+                        $('#message').text('ID tidak ditemukan.');
+                    } else {
+                        $('#message').text('Terjadi kesalahan.');
+                    }
+                },
+                error: function () {
+                    $('#message').text('Terjadi kesalahan. Coba lagi nanti.');
+                }
+            });
+        });
+    });
+</script>
         </div>
         <img src="rsc\jpg\hubungi-kami.jpg" width="457" height="369" style="border: 10px solid white; right: 0; position: absolute; padding-top: 6%;">
     </div>

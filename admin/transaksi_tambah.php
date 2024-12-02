@@ -28,7 +28,7 @@ include '../koneksi.php';
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>Berat</label>
+                        <label>Berat(Kg)</label>
                         <input type="number" class="form-control" name="berat" placeholder="Masukkan berat cucian .." required="required">
                     </div>
 
@@ -43,43 +43,143 @@ include '../koneksi.php';
                             <th width="20%">Jumlah</th>
                         </tr>
                         <tr>
-                            <td><input type="text" class="form-control" name="jenis_pakaian[]"></td>
+                            <td><select class="form-control" name="jenis_pakaian[]">
+                            <option value="">- Pilih Jenis</option>
+                            <?php
+                            $datas = mysqli_query($koneksi, "select * from tb_tipe_barang");
+                            while ($d = mysqli_fetch_array($datas)) {
+                            ?>
+                                <option value="<?php echo $d['barang_nama']; ?>"><?php echo $d['barang_nama']; ?></option>
+                            <?php
+                            }
+                            ?>
+                        </select></td>
                             <td><input type="number" class="form-control" name="jumlah_pakaian[]"></td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="form-control" name="jenis_pakaian[]"></td>
+                            <td><select class="form-control" name="jenis_pakaian[]">
+                            <option value="">- Pilih Jenis</option>
+                            <?php
+                            $datas = mysqli_query($koneksi, "select * from tb_tipe_barang");
+                            while ($d = mysqli_fetch_array($datas)) {
+                            ?>
+                                <option value="<?php echo $d['barang_nama']; ?>"><?php echo $d['barang_nama']; ?></option>
+                            <?php
+                            }
+                            ?>
+                        </select></td>
                             <td><input type="number" class="form-control" name="jumlah_pakaian[]"></td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="form-control" name="jenis_pakaian[]"></td>
+                            <td><select class="form-control" name="jenis_pakaian[]">
+                            <option value="">- Pilih Jenis</option>
+                            <?php
+                            $datas = mysqli_query($koneksi, "select * from tb_tipe_barang");
+                            while ($d = mysqli_fetch_array($datas)) {
+                            ?>
+                                <option value="<?php echo $d['barang_nama']; ?>"><?php echo $d['barang_nama']; ?></option>
+                            <?php
+                            }
+                            ?>
+                        </select></td>
                             <td><input type="number" class="form-control" name="jumlah_pakaian[]"></td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="form-control" name="jenis_pakaian[]"></td>
+                            <td><select class="form-control" name="jenis_pakaian[]">
+                            <option value="">- Pilih Jenis</option>
+                            <?php
+                            $datas = mysqli_query($koneksi, "select * from tb_tipe_barang");
+                            while ($d = mysqli_fetch_array($datas)) {
+                            ?>
+                                <option value="<?php echo $d['barang_nama']; ?>"><?php echo $d['barang_nama']; ?></option>
+                            <?php
+                            }
+                            ?>
+                        </select></td>
                             <td><input type="number" class="form-control" name="jumlah_pakaian[]"></td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="form-control" name="jenis_pakaian[]"></td>
+                            <td><select class="form-control" name="jenis_pakaian[]">
+                            <option value="">- Pilih Jenis</option>
+                            <?php
+                            $datas = mysqli_query($koneksi, "select * from tb_tipe_barang");
+                            while ($d = mysqli_fetch_array($datas)) {
+                            ?>
+                                <option value="<?php echo $d['barang_nama']; ?>"><?php echo $d['barang_nama']; ?></option>
+                            <?php
+                            }
+                            ?>
+                        </select></td>
                             <td><input type="number" class="form-control" name="jumlah_pakaian[]"></td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="form-control" name="jenis_pakaian[]"></td>
+                            <td><select class="form-control" name="jenis_pakaian[]">
+                            <option value="">- Pilih Jenis</option>
+                            <?php
+                            $datas = mysqli_query($koneksi, "select * from tb_tipe_barang");
+                            while ($d = mysqli_fetch_array($datas)) {
+                            ?>
+                                <option value="<?php echo $d['barang_nama']; ?>"><?php echo $d['barang_nama']; ?></option>
+                            <?php
+                            }
+                            ?>
+                        </select></td>
                             <td><input type="number" class="form-control" name="jumlah_pakaian[]"></td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="form-control" name="jenis_pakaian[]"></td>
+                            <td><select class="form-control" name="jenis_pakaian[]">
+                            <option value="">- Pilih Jenis</option>
+                            <?php
+                            $datas = mysqli_query($koneksi, "select * from tb_tipe_barang");
+                            while ($d = mysqli_fetch_array($datas)) {
+                            ?>
+                                <option value="<?php echo $d['barang_nama']; ?>"><?php echo $d['barang_nama']; ?></option>
+                            <?php
+                            }
+                            ?>
+                        </select></td>
                             <td><input type="number" class="form-control" name="jumlah_pakaian[]"></td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="form-control" name="jenis_pakaian[]"></td>
+                            <td><select class="form-control" name="jenis_pakaian[]">
+                            <option value="">- Pilih Jenis</option>
+                            <?php
+                            $datas = mysqli_query($koneksi, "select * from tb_tipe_barang");
+                            while ($d = mysqli_fetch_array($datas)) {
+                            ?>
+                                <option value="<?php echo $d['barang_nama']; ?>"><?php echo $d['barang_nama']; ?></option>
+                            <?php
+                            }
+                            ?>
+                        </select></td>
                             <td><input type="number" class="form-control" name="jumlah_pakaian[]"></td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="form-control" name="jenis_pakaian[]"></td>
+                            <td><select class="form-control" name="jenis_pakaian[]">
+                            <option value="">- Pilih Jenis</option>
+                            <?php
+                            $datas = mysqli_query($koneksi, "select * from tb_tipe_barang");
+                            while ($d = mysqli_fetch_array($datas)) {
+                            ?>
+                                <option value="<?php echo $d['barang_nama']; ?>"><?php echo $d['barang_nama']; ?></option>
+                            <?php
+                            }
+                            ?>
+                        </select></td>
                             <td><input type="number" class="form-control" name="jumlah_pakaian[]"></td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="form-control" name="jenis_pakaian[]"></td>
+                            <td><select class="form-control" name="jenis_pakaian[]">
+                            <option value="">- Pilih Jenis</option>
+                            <?php
+                            $datas = mysqli_query($koneksi, "select * from tb_tipe_barang");
+                            while ($d = mysqli_fetch_array($datas)) {
+                            ?>
+                                <option value="<?php echo $d['barang_nama']; ?>"><?php echo $d['barang_nama']; ?></option>
+                            <?php
+                            }
+                            ?>
+                        </select></td>
                             <td><input type="number" class="form-control" name="jumlah_pakaian[]"></td>
                         </tr>
                     </table>

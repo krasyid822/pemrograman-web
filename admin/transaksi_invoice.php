@@ -78,9 +78,9 @@
                         <td>
                             <?php
                             if ($t['transaksi_status'] == "0") {
-                                echo "<div class='label label-warning'>PROSES</div>";
+                                echo "<div class='label label-warning'>DITERIMA</div>";
                             } else if ($t['transaksi_status'] == "1") {
-                                echo "<div class='label label-info'>DI CUCI</div>";
+                                echo "<div class='label label-info'>DICUCI</div>";
                             } else if ($t['transaksi_status'] == "2") {
                                 echo "<div class='label label-success'>SELESAI</div>";
                             }

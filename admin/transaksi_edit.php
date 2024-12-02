@@ -67,19 +67,59 @@ include '../koneksi.php';
                                 </tr>
                             <?php } ?>
                             <tr>
-                                <td><input type="text" class="form-control" name="jenis_pakaian[]"></td>
+                                <td><select class="form-control" name="jenis_pakaian[]">
+                            <option value="">- Pilih Jenis</option>
+                            <?php
+                            $datas = mysqli_query($koneksi, "select * from tb_tipe_barang");
+                            while ($d = mysqli_fetch_array($datas)) {
+                            ?>
+                                <option value="<?php echo $d['barang_nama']; ?>"><?php echo $d['barang_nama']; ?></option>
+                            <?php
+                            }
+                            ?>
+                        </select></td>
                                 <td><input type="number" class="form-control" name="jumlah_pakaian[]"></td>
                             </tr>
                             <tr>
-                                <td><input type="text" class="form-control" name="jenis_pakaian[]"></td>
+                                <td><select class="form-control" name="jenis_pakaian[]">
+                            <option value="">- Pilih Jenis</option>
+                            <?php
+                            $datas = mysqli_query($koneksi, "select * from tb_tipe_barang");
+                            while ($d = mysqli_fetch_array($datas)) {
+                            ?>
+                                <option value="<?php echo $d['barang_nama']; ?>"><?php echo $d['barang_nama']; ?></option>
+                            <?php
+                            }
+                            ?>
+                        </select></td>
                                 <td><input type="number" class="form-control" name="jumlah_pakaian[]"></td>
                             </tr>
                             <tr>
-                                <td><input type="text" class="form-control" name="jenis_pakaian[]"></td>
+                                <td><select class="form-control" name="jenis_pakaian[]">
+                            <option value="">- Pilih Jenis</option>
+                            <?php
+                            $datas = mysqli_query($koneksi, "select * from tb_tipe_barang");
+                            while ($d = mysqli_fetch_array($datas)) {
+                            ?>
+                                <option value="<?php echo $d['barang_nama']; ?>"><?php echo $d['barang_nama']; ?></option>
+                            <?php
+                            }
+                            ?>
+                        </select></td>
                                 <td><input type="number" class="form-control" name="jumlah_pakaian[]"></td>
                             </tr>
                             <tr>
-                                <td><input type="text" class="form-control" name="jenis_pakaian[]"></td>
+                                <td><select class="form-control" name="jenis_pakaian[]">
+                            <option value="">- Pilih Jenis</option>
+                            <?php
+                            $datas = mysqli_query($koneksi, "select * from tb_tipe_barang");
+                            while ($d = mysqli_fetch_array($datas)) {
+                            ?>
+                                <option value="<?php echo $d['barang_nama']; ?>"><?php echo $d['barang_nama']; ?></option>
+                            <?php
+                            }
+                            ?>
+                        </select></td>
                                 <td><input type="number" class="form-control" name="jumlah_pakaian[]"></td>
                             </tr>
                         </table>
@@ -89,10 +129,10 @@ include '../koneksi.php';
                             <select class="form-control" name="status" required="required">
                                 <option <?php if ($t['transaksi_status'] == "0") {
                                             echo "selected='selected'";
-                                        } ?> value="0">PROSES</option>
+                                        } ?> value="0">DITERIMA</option>
                                 <option <?php if ($t['transaksi_status'] == "1") {
                                             echo "selected='selected'";
-                                        } ?> value="1">DI CUCI</option>
+                                        } ?> value="1">DICUCI</option>
                                 <option <?php if ($t['transaksi_status'] == "2") {
                                             echo "selected='selected'";
                                         } ?> value="2">SELESAI</option>

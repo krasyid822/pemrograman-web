@@ -124,7 +124,7 @@ include '../koneksi.php';
                         <td>
                             <?php
                             if ($d['transaksi_status'] == "0") {
-                                echo "<div class='label label-warning'>PROSES</div>";
+                                echo "<div class='label label-warning'>DITERIMA</div>";
                             } else if ($d['transaksi_status'] == "1") {
                                 echo "<div class='label label-info'>DICUCI</div>";
                             } else if ($d['transaksi_status'] == "2") {
