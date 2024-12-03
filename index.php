@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Freshen Laundry Service</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="rsc\css\style.css">
 
 </head>
-<body>
+<body style="scroll-behavior: smooth;">
     
     <div class="rectangle-1" id="home">
         <img src="rsc\png\logo.png" class="logo" alt="Logo" style="position:absolute; left: 10px; top: 10px;">
@@ -46,21 +46,21 @@
         <div style="display: flex;">
             <div style="margin-left: 1%;">
                 <img src="rsc\jpg\our-service-1.jpg" style="height: 135px; width: 237px; border: 20px solid white; margin-left: 19%;" alt="Service 1">
-                <p style="width: 450px; text-align: center;">
+                <p style="width: 80%; max-width: 450px; text-align: center; margin: 0 auto;">
                     <b>Layanan Dry Cleaning Ramah Lingkungan</b><br><br>
                     Bersihkan pakaian halus Anda dengan aman menggunakan layanan dry cleaning ramah lingkungan kami, agar tetap segar dan bebas dari bahan kimia berbahaya....
                 </p>
             </div>
             <div style="position: absolute; left: 35%;">
                 <img src="rsc\jpg\our-service-2.jpg" style="height: 135px; width: 237px; border: 20px solid white; margin-left: 19%;" alt="Service 1">
-                <p style="width: 450px; text-align: center;">
+                <p style="width: 80%; max-width: 450px; text-align: center; margin: 0 auto;">
                     <b>Layanan Cuci & Lipat</b><br><br>
                     Hemat waktu dengan membiarkan kami menangani kebutuhan binatu Anda dengan layanan cuci & lipat yang efisien, memastikan pakaian Anda bersih....
                 </p>
             </div>
             <div style="margin-right: 1%; position: absolute; right: 0; left: auto;">
                 <img src="rsc\jpg\our-service-3.jpg" style="height: 135px; width: 237px; border: 20px solid white; margin-left: 19%;" alt="Service 1">
-                <p style="width: 450px; text-align: center;">
+                <p style="width: 80%; max-width: 450px; text-align: center; margin: 0 auto;">
                     <b>Layanan Cuci & Lipat</b><br><br>
                     Hemat waktu dengan membiarkan kami menangani kebutuhan binatu Anda dengan layanan cuci & lipat yang efisien, memastikan pakaian Anda bersih....
                 </p>
@@ -91,42 +91,43 @@
                 <button type="submit" name="submit" style="width: 200px; height: 30px; margin-top: 10px; background: #fbd7a7; color: #FFA845E5;">Kirim</button>
             </form>
         </div>
-        <div id="status">
+
+        <div id="status" style="margin-left: 10px;">
             <h2 style="color: #fbd7a7;">Cek Status</h2>
             <p><b>Ingin melihat status pengerjaan?<br>Masukkan ID yang tertera di Invoice!</b></p>
             <form id="idForm">
-    <input type="text" id="id" name="invoice" placeholder="ID Invoice" required style="width: 200px; height: 30px; margin-top: 10px;"><br>
-    <button type="submit" name="submit" style="width: 200px; height: 30px; margin-top: 10px; background: #fbd7a7; color: #FFA845E5;">Cari</button>
-</form>
-<div id="message" style="margin-top: 20px; color: red;"></div>
+                <input type="text" id="id" name="invoice" placeholder="ID Invoice" required style="width: 200px; height: 30px; margin-top: 10px;"><br>
+                <button type="submit" name="submit" style="width: 200px; height: 30px; margin-top: 10px; background: #fbd7a7; color: #FFA845E5;">Cari</button>
+            </form>
+            <div id="message" style="margin-top: 20px; color: red;"></div>
 
-<script>
-    $(document).ready(function () {
-        $('#idForm').on('submit', function (e) {
-            e.preventDefault(); 
+            <script>
+                $(document).ready(function () {
+                    $('#idForm').on('submit', function (e) {
+                        e.preventDefault(); 
 
-            const id = $('#id').val();
+                        const id = $('#id').val();
 
-            $.ajax({
-                url: 'proses_cek_status.php', 
-                method: 'POST',
-                data: { invoice: id }, 
-                success: function (response) {
-                    if (response.trim() === 'success') {
-                        window.location.href = 'admin/cek_status.php?id=' + id;
-                    } else if (response.trim() === 'fail') {
-                        $('#message').text('ID tidak ditemukan.');
-                    } else {
-                        $('#message').text('Terjadi kesalahan.');
-                    }
-                },
-                error: function () {
-                    $('#message').text('Terjadi kesalahan. Coba lagi nanti.');
-                }
-            });
-        });
-    });
-</script>
+                        $.ajax({
+                            url: 'proses_cek_status.php', 
+                            method: 'POST',
+                            data: { invoice: id }, 
+                            success: function (response) {
+                                if (response.trim() === 'success') {
+                                    window.location.href = 'admin/cek_status.php?id=' + id;
+                                } else if (response.trim() === 'fail') {
+                                    $('#message').text('ID tidak ditemukan.');
+                                } else {
+                                    $('#message').text('Terjadi kesalahan.');
+                                }
+                            },
+                            error: function () {
+                                $('#message').text('Terjadi kesalahan. Coba lagi nanti.');
+                            }
+                        });
+                    });
+                });
+            </script>
         </div>
         <img src="rsc\jpg\hubungi-kami.jpg" width="457" height="369" style="border: 10px solid white; right: 0; position: absolute; padding-top: 6%;">
     </div>
